@@ -32,6 +32,12 @@ namespace Уч_пр_1_2_
 
         private void createMatrix(int n, int m)
         {
+            matrix.ColumnCount = 0;
+            matrix.RowCount = 0;
+
+            n = n <= 0 ? 1 : n;
+            m = m <= 0 ? 1 : m;
+            
             for (int i = 0; i < n; i++)
             {
                 matrix.Columns.Add("", "");
